@@ -2,8 +2,9 @@
     Contains data (object) and reference to next in list
 */
 
-//Git repository 
-//DO NOT UNDERSTAND
+//adding a differnet comment
+//this is so abstract 
+
 
 public class Node {
   private Object item;
