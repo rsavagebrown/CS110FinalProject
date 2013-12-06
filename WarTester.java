@@ -1,7 +1,8 @@
 import javax.swing.*;
 /**
+   WarTester 
    JFrame for WarGUI
-   @Rogan Brown
+   Rogan Brown
    CS110 final project
 */
 

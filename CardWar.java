@@ -3,9 +3,9 @@
  * A card consists of a suit value and a rank value.  Once instantiated, the
  * Card object cannot change.
  *
- * modified by: @Rogan Brown
+ * modified by: Rogan Brown
  * CS110 Final project
- * originally written by: @Jackie Horton
+ * originally written by: Jackie Horton
  */
 
 public class CardWar

@@ -1,6 +1,7 @@
 /**
+   main
    tester for deck, card and hand classes
-   @Rogan Brown
+   Rogan Brown
    CS110 Final project
 */
 
@@ -8,9 +9,11 @@ public class main {
 
 	public static void main(String[] args)
 	{
-		int index = 0;
+		
+      //tests to see if deck prints and shuffles
+      int index = 0;
       DeckWar deck = new DeckWar();
-      //deck.shuffle();
+      deck.shuffle();
 		CardWar C;
 
 		System.out.println( deck.getDeckSize() );

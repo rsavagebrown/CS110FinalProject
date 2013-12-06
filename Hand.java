@@ -1,17 +1,19 @@
 /**
-   Hand class seperates a deck into "sub decks"
-   @Rogan Brown
-   CS110 Final Project
+*  Hand 
+*  class seperates a deck into "sub decks"
+*  Rogan Brown
+*  CS110 Final Project
 */
 
 //import java libraries
 import java.util.ArrayList;
+import java.util.*;
 import java.util.Collections;
 
 
 public class Hand
 {
-   
+    
    //declare data: ArrayList for hand
    private ArrayList<CardWar> hand;
    
@@ -55,5 +57,19 @@ public class Hand
          //uses method from collections class to shuffle
          Collections.shuffle(hand);
       }
+      
+   public CardWar getTopCard()
+      {
+         return hand.remove(0); 
+      
+      }
+      
+   public String toString()
+   {
+      return hand.toString();
+   
+   }
+   
+
    
 }

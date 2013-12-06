@@ -1,6 +1,6 @@
 /**
    WarGame class simulate a game of war
-   @Rogan Brown
+   Rogan Brown
    CS 110 Final Project
 */
 public class WarGame
@@ -9,6 +9,7 @@ public class WarGame
    public static void main(String[] args)
    {
       //create a deck of cards and shuffle
+      
       DeckWar deck = new DeckWar();
       deck.shuffle();
       
@@ -26,6 +27,20 @@ public class WarGame
       //shuffles the hands
       player1.shuffle();
       player2.shuffle();
+      
+      //get top card
+      player1.getTopCard();
+      player2.getTopCard();
+      
+      //compare the cards
+      
+      //player with higher card puts both cards into hand
+      
+      //player with most cards at the end of the game wins
+      
+      //player with empty hand losses
+      
+      
        
            
    }

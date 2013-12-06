@@ -1,15 +1,16 @@
 /**
-   Deck class - represents a deck of cards
-                deals, shuffles, displays size
-   @Rogan Brown
-   CS110 Final Project
-
+*  DeckWar
+*  represents a deck of cards
+*  deals, shuffles, displays size
+*  Rogan Brown
+*  CS110 Final Project
 */
 
 //import java libraries 
 import java.util.ArrayList;
 import java.util.Random;
 import java.util.Collections;
+import java.util.*;
 
 
 
@@ -30,11 +31,12 @@ public class DeckWar
       {
          for(int j = 0; j<=12; j++)
           {
-            deck.add(new CardWar(j,i));  //add to ArrayList
+            deck.add(new CardWar(j,i));
           }
       
       }
-   
+
+         
    }
    /**
       deal() class returns the deck in order

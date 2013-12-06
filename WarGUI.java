@@ -3,8 +3,8 @@ import java.awt.*;
 import java.awt.event.*;
 
 /**
-   War GUI designs applet for a card game of war
-   @Rogan Brown
+   WarGUI designs applet for a card game of war
+   Rogan Brown
    CS 110 Final Project
 */
 
@@ -86,6 +86,7 @@ public class WarGUI extends JFrame  //example of inheritence
       
       
       //create image icons
+      
       front = new ImageIcon("cardPics (2)/aces.jpg");
       back = new ImageIcon("cardPics (2)/back.jpg");
       back2 = new ImageIcon("cardPics (2)/back.jpg");
