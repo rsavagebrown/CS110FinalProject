@@ -8,7 +8,7 @@ import java.awt.event.*;
    CS 110 Final Project
 */
 
-public class WarGUI extends JFrame
+public class WarGUI extends JFrame  //example of inheritence 
 {
 
    private WarGame game;  //the guts
@@ -16,27 +16,30 @@ public class WarGUI extends JFrame
    
    //declare panels
    private JPanel buttonPanel, Player1, Player2, title, info, centerPanel;
+   
+   //declare buttons
    private JButton flip, startOver, endGame;
+   //declare labels for title, info, and card icons
    private JLabel pic, pic2, welcome, titleLabel, picfront, pic2front;
+   //declare image icons
    private ImageIcon front, back, back2, front2;
+
 
    public WarGUI(String s) 
    {
-      
+      //inherit s from JFrame
       super(s);
       
+      //create new war game
       game = new WarGame();
       
-      setSize(1000,600);
+      //set initial layout
       setLayout(new BorderLayout());
       
       //create instance of buttons
       flip = new JButton("flip");
       startOver = new JButton("start over");
       endGame = new JButton("end game");
-      
-      
-      
       
       //create and add panels 
       centerPanel = new JPanel(new FlowLayout());
@@ -70,7 +73,7 @@ public class WarGUI extends JFrame
 		welcome.setForeground(Color.BLACK);
 		title.add(welcome);
 
-      
+      //create button listeners
       flip.addActionListener(new ButtonListener());
       startOver.addActionListener(new ButtonListener());
       endGame.addActionListener(new ButtonListener());
@@ -82,7 +85,7 @@ public class WarGUI extends JFrame
       buttonPanel.add(endGame);  
       
       
-      
+      //create image icons
       front = new ImageIcon("cardPics (2)/aces.jpg");
       back = new ImageIcon("cardPics (2)/back.jpg");
       back2 = new ImageIcon("cardPics (2)/back.jpg");

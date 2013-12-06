@@ -22,17 +22,17 @@ public class main {
 	   }
       
       
-      Hand pile = new Hand();
-      pile.shuffle();  
-      CardWard D;
-      while( pile.handSize() != 0 && pile.handSize() <=26)
-      {   
-          C = deck.deal();
-          
-          D = pile.add();
-          System.out.println(D.toString());
-          
-      }
+     //  Hand pile = new Hand();
+//       pile.shuffle();  
+//       //CardWard D;
+//       while( pile.handSize() != 0 && pile.handSize() <=26)
+//       {   
+//           C = deck.deal();
+//           
+//           D = pile.add();
+//           System.out.println(D.toString());
+//           
+//       }
       
 	}
 }

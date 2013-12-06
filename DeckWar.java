@@ -6,6 +6,7 @@
 
 */
 
+//import java libraries 
 import java.util.ArrayList;
 import java.util.Random;
 import java.util.Collections;
@@ -14,7 +15,7 @@ import java.util.Collections;
 
 public class DeckWar
 {
-   private ArrayList<CardWar> deck;
+   private ArrayList<CardWar> deck;  //create ArrayList of Cards
    
    
    /**
@@ -24,11 +25,12 @@ public class DeckWar
    {
       deck = new ArrayList<CardWar>();
       
+      //loop every suit and rank into a deck of cards
       for (int i = 0; i<=3; i++)
       {
          for(int j = 0; j<=12; j++)
           {
-            deck.add(new CardWar(j,i));
+            deck.add(new CardWar(j,i));  //add to ArrayList
           }
       
       }
@@ -36,6 +38,7 @@ public class DeckWar
    }
    /**
       deal() class returns the deck in order
+      @return the deck of cards in order
    */
    public CardWar deal()
    {
@@ -44,6 +47,7 @@ public class DeckWar
    }
    /**
       getDeckSize returns the size of the deck
+      @return the size of the deck
    */
    public int getDeckSize()
    {

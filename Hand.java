@@ -4,6 +4,7 @@
    CS110 Final Project
 */
 
+//import java libraries
 import java.util.ArrayList;
 import java.util.Collections;
 
@@ -11,9 +12,9 @@ import java.util.Collections;
 public class Hand
 {
    
-   //declare data
+   //declare data: ArrayList for hand
    private ArrayList<CardWar> hand;
-   private int HANDSIZE = 26;
+   
    
    
    /**
@@ -28,29 +29,27 @@ public class Hand
    }
    /**
       add method from ArrayList methods adds card to hand
+      @param newCard adds a card to hand
    */
    public void add(CardWar newCard)
    {
-      hand.add(newCard);
-      
-//       DeckWar deck = new DeckWar();
-//       
-//       deck.shuffle();
-//         
-//       for(int i = 0; i<=26; i++)
-//           {
-//             hand.add(deck.deal());
-//           }
-// 
- 
+      hand.add(newCard); 
    
    }
    
+   /**
+      handSize mehtod returns the size of the hand
+      @return the size of the hand
+   */
    public int handSize()
    {
-      return HANDSIZE;
+      
+      return hand.size();
    }
    
+   /**
+      shuffle method shuffles the hand
+   */
    public void shuffle()
       {
          //uses method from collections class to shuffle
@@ -58,23 +57,3 @@ public class Hand
       }
    
 }
-
-
-
-
-
-// public class Hand extends DeckWar
-// {
-//    private CardWar[] hand;
-//    
-//    public Hand()
-//    {
-//       DeckWar deck = new DeckWar();
-//       
-//       for(int i = 0;i <= 26 ; i++)
-//          hand[i] = deck.deal();
-//          
-//    }
-//    
-//   
-// }
